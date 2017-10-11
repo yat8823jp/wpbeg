@@ -30,7 +30,7 @@
 								<div class="post__author">
 									<p class="post__author__ttl">投稿者</p>
 									<?php echo get_avatar( get_the_author_meta( 'ID' ), 60 ); ?>
-									<div class="post__author__name"><?php the_author_posts_link( ID ); ?></div>
+									<div class="post__author__name"><?php the_author_posts_link(); ?></div>
 									<p class="post__author__comment"><?php the_author_meta( 'description' ) ?></p>
 								</div>
 								<?php comments_template(); ?>

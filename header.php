@@ -8,11 +8,12 @@
 		<meta name="description" content="WordPress theme development static data for beginners">
 		<meta name="keywords" content="WordPress, Theme, development">
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/common/ico/favicon.ico">
+		<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
 		<header class="header">
-			<h1 class="header__ttl"><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="header__ttl"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 			<p class="header__descrition"><?php bloginfo( 'description' ); ?></p>
 			<?php get_search_form(); ?>
 			<?php wp_nav_menu(); ?>
