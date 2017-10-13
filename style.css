@@ -34,7 +34,7 @@ body {
           flex-direction: column; }
 
 img {
-  max-width: 100%;
+  max-width: 700px;
   height: auto; }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, li {
