@@ -26,6 +26,7 @@
 		wp_enqueue_style( 'Sacramento', '//fonts.googleapis.com/css?family=Sacramento&amp;amp;subset=latin-ext', array() );
 		wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
 		wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '4.5.0' );
+		wp_enqueue_style( 'wpbeg', get_template_directory_uri() . '/css/wpbeg.css', array(), '1.0.0' );
 		wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
 	}
 	add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
