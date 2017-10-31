@@ -14,7 +14,7 @@
 								</div>
 							<?php endwhile;
 						else :
-							?><p>表示する記事がありません</p><?php
+							?><p><?php echo __( 'no post data', 'wpbeg' ); ?></p><?php
 						endif;
 					?>
 				</div>

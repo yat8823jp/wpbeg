@@ -28,7 +28,7 @@
 									?>
 								</div>
 								<div class="post__author">
-									<p class="post__author__ttl">投稿者</p>
+									<p class="post__author__ttl"><?php echo __( 'author', 'wpbeg' ); ?></p>
 									<?php echo get_avatar( get_the_author_meta( 'ID' ), 60 ); ?>
 									<div class="post__author__name"><?php the_author_posts_link(); ?></div>
 									<p class="post__author__comment"><?php the_author_meta( 'description' ) ?></p>
@@ -46,7 +46,7 @@
 								<?php endif; ?>
 							<?php endwhile;
 						else :
-							?><p>表示する記事がありません</p><?php
+							?><p><?php echo __( 'no post data', 'wpbeg' ); ?></p><?php
 						endif; ?>
 					</div>
 				</div>

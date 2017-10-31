@@ -17,11 +17,11 @@
 							<li class="post__meta__item"><i class="fa fa-tag" aria-hidden="true"><?php the_tags( '' ); ?></i></li>
 						</ul>
 						<?php the_post_thumbnail(); ?>
-						<?php the_content( '続きを読む' ); ?>
+						<?php the_content( __( 'read more', 'wpbeg' ) ); ?>
 					</div>
 					<?php endwhile;
 						else :
-							?><p>表示する記事がありません</p><?php
+							?><p><?php echo __( 'no post data', 'wpbeg' ); ?></p><?php
 						endif;
 					?>
 				</div>
