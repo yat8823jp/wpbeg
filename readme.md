@@ -14,3 +14,10 @@ License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: wpbeg
 ```
+
+== Changelog ==
+
+= 1.0 =
+* Released: October 30, 2017
+
+Initial release

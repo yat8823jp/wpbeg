@@ -212,6 +212,9 @@ iframe {
     margin-left: 30px;
     float: right; } }
 
+.menu li {
+  list-style-type: none; }
+
 .footer {
   width: 100%;
   text-align: center;
@@ -514,20 +517,38 @@ iframe {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-bottom: 60px; }
+
+.header .menu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box; }
+
+.header .menu li {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left; }
+
+.header .menu li .children {
+  display: none; }
 
 .header .menu-item {
-  margin: 0 20px;
-  list-style: none; }
+  margin: 0 40px; }
 
 .header .menu-item:first-child {
   margin-left: 0; }
 
 .header .menu-item:last-child {
   margin-right: 0; }
-
-.header .menu-item:first-child {
-  margin-right: 20px; }
 
 .header .menu-item a {
   font-size: 16px;
