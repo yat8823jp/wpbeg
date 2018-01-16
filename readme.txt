@@ -1,6 +1,4 @@
-WPBEG
-Simple blogging theme for WordPress
-
+=== WPBEG ===
 Theme Name: WPBEG
 Description: Simple blogging theme for WordPress
 Version: 1.0.0
@@ -11,3 +9,25 @@ Tags: right-sidebar, blog, Responsive
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: wpbeg
+
+== Changelog ==
+
+= 1.0 =
+* Released: October 30, 2017
+
+Initial release
+
+
+== Third-party Resources ==
+
+Font Awesome 4.6.3 by @davegandy
+License : http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+Source : http://fontawesome.io
+
+== Copyright ==
+WEBEG, Copyright yat8823jp
+WEBEG is distributed under the terms of the GNU GPL
+
+The image files under the image directory are those shot and created by the theme creator and are published under the GPL.
+
+All images used in the images(https://github.com/yat8823jp/wpbeg/tree/master/images) is taken by Yasuhito Kawanishi(@yat8823jp) and is released under GPL.
