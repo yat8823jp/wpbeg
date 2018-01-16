@@ -2,10 +2,17 @@
 /**
  * theme support
  */
-add_theme_support( 'menus' );
-add_theme_support( 'title-tag' );
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'automatic-feed-links' );
+ if ( ! function_exists( 'wpbeg_setup' ) ) {
+	function wpbeg_setup() {
+		load_theme_textdomain( 'wpbeg', get_template_directory() . '/languages' );
+		add_action( 'after_setup_theme', 'wpbeg_theme_setup' );
+		add_theme_support( 'menus' );
+		add_theme_support( 'title-tag' );
+		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'automatic-feed-links' );
+	}
+}
+add_action( 'after_setup_theme', 'wpbeg_setup' );
 
 if ( ! isset( $content_width ) ) {
 	$content_width = 960;
@@ -92,8 +99,3 @@ function wpbeg_widgets_init() {
 	);
 }
 add_action( 'widgets_init', 'wpbeg_widgets_init' );
-
-function wpbeg_theme_setup(){
-    load_theme_textdomain( 'wpbeg', get_template_directory() . '/languages' );
-}
-add_action( 'after_setup_theme', 'wpbeg_theme_setup' );
