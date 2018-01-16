@@ -22,6 +22,10 @@ Initial release
 
 == Third-party Resources ==
 
+Normalize.css
+License: MIT
+Source : https://necolas.github.io/normalize.css/
+
 Font Awesome 4.6.3 by @davegandy
 License : http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 Source : http://fontawesome.io

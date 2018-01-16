@@ -17,11 +17,11 @@
 							<li class="post__meta__item"><i class="fa fa-tag" aria-hidden="true"><?php the_tags( '' ); ?></i></li>
 						</ul>
 						<?php the_post_thumbnail(); ?>
-						<?php the_content( __( 'read more', 'wpbeg' ) ); ?>
+						<?php the_content( esc_html( 'read more', 'wpbeg' ) ); ?>
 					</div>
 					<?php endwhile;
 						else :
-							?><p><?php echo __( 'no post data', 'wpbeg' ); ?></p><?php
+							?><h2 class="post__ttl__error"><?php esc_html_e( 'no post data', 'wpbeg' ); ?></h2><?php
 						endif;
 					?>
 				</div>

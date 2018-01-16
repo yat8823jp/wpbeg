@@ -4,10 +4,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="format-detection" content="telephone=no">
-		<meta name="description" content="WordPress theme development static data for beginners">
-		<meta name="keywords" content="WordPress, Theme, development">
-		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/common/ico/favicon.ico">
+		<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 		<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 		<?php wp_head(); ?>
 	</head>

@@ -14,7 +14,7 @@
 								</div>
 							<?php endwhile;
 						else :
-							?><p><?php echo __( 'no post data', 'wpbeg' ); ?></p><?php
+							?><h2 class="post__ttl__error"><?php echo esc_html_e( 'no post data', 'wpbeg' ); ?></h2><?php
 						endif;
 					?>
 				</div>
