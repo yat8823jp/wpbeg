@@ -44,4 +44,4 @@ WEBEG is distributed under the terms of the GNU GPL
 
 The image files under the image directory are those shot and created by the theme creator and are published under the GPL.
 
-All images used in the theme(https://github.com/yat8823jp/wpbeg/tree/master/images) is taken or created by Yasuhito Kawanishi(@yat8823jp) and is released under GPL.
+All images used in the theme(https://github.com/yat8823jp/wpbeg/tree/master/images) is taken or created by YAT(Yasuhito Kawanishi)(@yat8823jp) and is released under GPL.
