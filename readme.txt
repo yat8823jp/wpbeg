@@ -1,7 +1,7 @@
 === WPBEG ===
 Theme Name: WPBEG
 Description: Simple blogging theme for WordPress
-Version: 1.0.1
+Version: 1.0.2
 Theme URI: https://github.com/yat8823jp/wpbeg
 Author: YAT
 Author URI: https://wp.yat-net.net.com
@@ -11,6 +11,14 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: wpbeg
 
 == Changelog ==
+
+= 1.0.2 =
+* searchform.php bugfix.
+* Add register_nav_menus.
+* Changed wpbeg_setup function.
+* Changed hardcoading text.
+* Changed meta information of header.php.
+* Copyright notation added to readme.txt.
 
 = 1.0.1 =
 * add editor-style. I changed the font-awesome of CDN to in-theme bundle
@@ -36,4 +44,4 @@ WEBEG is distributed under the terms of the GNU GPL
 
 The image files under the image directory are those shot and created by the theme creator and are published under the GPL.
 
-All images used in the images(https://github.com/yat8823jp/wpbeg/tree/master/images) is taken by Yasuhito Kawanishi(@yat8823jp) and is released under GPL.
+All images used in the theme(https://github.com/yat8823jp/wpbeg/tree/master/images) is taken or created by Yasuhito Kawanishi(@yat8823jp) and is released under GPL.

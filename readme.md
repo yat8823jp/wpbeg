@@ -17,7 +17,14 @@ Text Domain: wpbeg
 
 == Changelog ==
 
-=======
+= 1.0.2 =
+* searchform.php bugfix.
+* Add register_nav_menus.
+* Changed wpbeg_setup function.
+* Changed hardcoading text.
+* Changed meta information of header.php.
+* Copyright notation added to readme.txt.
+
 = 1.0.1 =
 * add editor-style. I changed the font-awesome of CDN to in-theme bundle
 
@@ -25,3 +32,22 @@ Text Domain: wpbeg
 * Released: October 30, 2017
 
 Initial release
+
+== Third-party Resources ==
+
+Normalize.css
+License: MIT
+Source : https://necolas.github.io/normalize.css/
+
+Font Awesome 4.6.3 by @davegandy
+License : http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+Source : http://fontawesome.io
+
+== Copyright ==
+
+WEBEG, Copyright yat8823jp
+WEBEG is distributed under the terms of the GNU GPL
+
+The image files under the image directory are those shot and created by the theme creator and are published under the GPL.
+
+All images used in the [theme](https://github.com/yat8823jp/wpbeg/tree/master/images) is taken or created by Yasuhito Kawanishi(@yat8823jp) and is released under GPL.
