@@ -10,8 +10,8 @@
 	<?php endif; ?>
 	<?php
 		$args = array(
-			'title_reply' => 'Leave a Reply',
-			'label_submit' => ' POST COMMENT',
+			'title_reply' => esc_html__( 'Leave a Reply', 'wpbeg' ),
+			'label_submit' => esc_html__( 'POST COMMENT', 'wpbeg' ),
 		);
 		comment_form( $args );
 	?>

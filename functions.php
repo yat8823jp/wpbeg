@@ -38,12 +38,16 @@ add_filter( 'pre_get_document_title', 'wpbeg_title' );
  * Read stylesheet, script
  */
 function wpbeg_script() {
-	wp_enqueue_style( 'mplus1p', '//fonts.googleapis.com/earlyaccess/mplus1p.css', array() );
-	wp_enqueue_style( 'Sacramento', '//fonts.googleapis.com/css?family=Sacramento&amp;amp;subset=latin-ext', array() );
+	$locale = get_locale();
+	$locale = apply_filters( 'theme_locale', $locale, 'wpbeg' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.css', array(), '4.7.0' );
-	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '4.5.0' );
-	wp_enqueue_style( 'wpbeg', get_template_directory_uri() . '/css/wpbeg.css', array(), '1.0.0' );
-	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
+	if( $locale == 'ja' ) {
+		wp_enqueue_style( 'wpbeg-mplus1p', '//fonts.googleapis.com/earlyaccess/mplus1p.css', array() );
+	}
+	wp_enqueue_style( 'wpbeg-Sacramento', '//fonts.googleapis.com/css?family=Sacramento&amp;amp;subset=latin-ext', array() );
+	wp_enqueue_style( 'wpbeg-normalize', get_template_directory_uri() . '/css/normalize.css', array(), '4.5.0' );
+	wp_enqueue_style( 'wpbeg-wpbeg', get_template_directory_uri() . '/css/wpbeg.css', array(), '1.0.0' );
+	wp_enqueue_style( 'wpbeg-style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
 }
 add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
 
