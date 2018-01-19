@@ -1,7 +1,7 @@
 === WPBEG ===
 Theme Name: WPBEG
 Description: Simple blogging theme for WordPress
-Version: 1.0.2
+Version: 1.0.3
 Theme URI: https://github.com/yat8823jp/wpbeg
 Author: YAT
 Author URI: https://wp.yat-net.net.com
@@ -11,6 +11,16 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: wpbeg
 
 == Changelog ==
+
+= 1.0.3 =
+* Added translation part to comment.php.
+* Remove thumbnail from 404.php.
+* Delete meta description.
+* Escape processing addition and modification of searchform.php.
+* Add wp_link_pages to page.php
+* Escape get_the_date.
+* Add prefix to style handle.
+* Changed mplus1p to read only in Japanese.
 
 = 1.0.2 =
 * searchform.php bugfix.
