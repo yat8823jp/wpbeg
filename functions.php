@@ -5,7 +5,6 @@
  if ( ! function_exists( 'wpbeg_setup' ) ) {
 	function wpbeg_setup() {
 		load_theme_textdomain( 'wpbeg', get_template_directory() . '/languages' );
-		add_action( 'after_setup_theme', 'wpbeg_theme_setup' );
 		add_theme_support( 'menus' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );

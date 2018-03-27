@@ -195,6 +195,15 @@ pre {
 iframe {
   max-width: 100%; }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
 @media (min-width: 641px) {
   .alignleft {
     margin-right: 30px;

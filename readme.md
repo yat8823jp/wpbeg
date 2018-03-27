@@ -17,6 +17,12 @@ Text Domain: wpbeg
 
 == Changelog ==
 
+= 1.0.5 =
+
+- Dropdown menu style added.
+- Unnecessary add_action deleted.
+- Removed echo from esc_html_e. 
+
 = 1.0.4 =
 
 - Changed auther URL
