@@ -4,11 +4,16 @@
  */
  if ( ! function_exists( 'wpbeg_setup' ) ) {
 	function wpbeg_setup() {
+		$args = array(
+			'default_color' => "#fff"
+		);
 		load_theme_textdomain( 'wpbeg', get_template_directory() . '/languages' );
-		add_theme_support( 'menus' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'editor-styles' );
+		add_theme_support( "custom-background", $args );
+		add_theme_support( "custom-header", $args );
 	}
 	register_nav_menus( array(
 		'global_nav' => esc_html__( 'global navigation', 'wpbeg' ),
@@ -54,9 +59,13 @@ add_action( 'wp_enqueue_scripts', 'wpbeg_script' );
  * Read editor-style
  */
 function wpbeg_theme_add_editor_styles() {
-	add_editor_style( get_template_directory_uri() . "/css/editor-style.css" );
+	//旧コード
+	// add_editor_style( get_template_directory_uri() . "/css/editor-style.css" );
+	//新コード
+	$editor_style_url = get_theme_file_uri( '/css/editor-style.css' );
+	wp_enqueue_style( 'block-editor-style', $editor_style_url );
 }
-add_action( 'admin_init', 'wpbeg_theme_add_editor_styles' );
+add_action( 'enqueue_block_editor_assets', 'wpbeg_theme_add_editor_styles' );
 
 function wpbeg_widgets_init() {
 	register_sidebar (
@@ -105,3 +114,5 @@ function wpbeg_widgets_init() {
 	);
 }
 add_action( 'widgets_init', 'wpbeg_widgets_init' );
+
+// remove_action( 'wp_head', 'wp_generator' );

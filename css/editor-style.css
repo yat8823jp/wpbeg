@@ -1,1 +1,8 @@
-@import url( 'wpbeg.css' );
+@import url( './wpbeg.css' );
+.editor-styles-wrapper {
+	background-color: #eee;
+}
+
+.editor-styles-wrapper h2 {
+	font-size: 1.6rem;
+}
